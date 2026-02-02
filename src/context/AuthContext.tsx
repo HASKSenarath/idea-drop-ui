@@ -11,7 +11,7 @@ import { setStoredAccessToken } from "@/lib/authToken";
 type AuthContextType = {
   accessToken: string | null;
   setAccessToken: (token: string | null) => void;
-  user: { userId: string; email: string; name: string } | null;
+  user: { id: string; email: string; name: string } | null;
   setUser: (user: AuthContextType["user"]) => void;
 };
 

@@ -96,7 +96,7 @@ function IdeaDetailsPage() {
       <p className="text-gray-700">{idea.summary}</p>
       <p className="text-gray-600 mt-4">{idea.description}</p>
 
-      {user && user?.userId === idea.user && (
+      {user && user?.id === idea.user && (
         <>
           {/* Edit Link */}
           <Link
