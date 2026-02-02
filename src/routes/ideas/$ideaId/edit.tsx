@@ -186,6 +186,13 @@ function IdeaEditPage() {
           </button>
         </div>
       </Modal>
+      <Modal
+        isOpen={!!errorModal}
+        title={errorModal?.title}
+        onClose={() => setErrorModal(null)}
+      >
+        {errorModal?.message}
+      </Modal>
     </div>
   );
 }
